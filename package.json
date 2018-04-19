@@ -12,7 +12,10 @@
     "express": "^4.16.3",
     "next": "^5.1.0",
     "react": "^16.3.2",
-    "react-dom": "^16.3.2"
+    "react-dom": "^16.3.2",
+    "styled-components": "^3.2.6"
   },
-  "devDependencies": {}
+  "devDependencies": {
+    "babel-plugin-styled-components": "^1.5.1"
+  }
 }
