@@ -1,15 +1,6 @@
 import styled from 'styled-components';
+import MainLayout from '../layouts/MainLayout';
 
-const Hello = styled.div`
-  background: goldenrod;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  font-size: 64px;
-  color: #102e37;
-`;
-
-const Index = () => <Hello>Hello World</Hello>;
+const Index = () => <MainLayout />;
 
 export default Index;
