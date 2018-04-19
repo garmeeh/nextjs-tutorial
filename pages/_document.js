@@ -4,6 +4,10 @@
  */
 import Document, { Head, Main, NextScript } from 'next/document';
 import { ServerStyleSheet } from 'styled-components';
+import GlobalStyles from '../helpers/GlobalStylesHelper';
+import SeoDefaultHead from '../components/Seo';
+
+GlobalStyles();
 
 export default class MyDocument extends Document {
   static getInitialProps({ renderPage }) {
@@ -19,7 +23,20 @@ export default class MyDocument extends Document {
     return (
       <html>
         <Head>
-          <title>My page</title>
+          <meta charSet="utf-8" key="charSet" />
+          <meta httpEquiv="x-ua-compatible" content="ie=edge" key="httpEquiv" />
+          <meta
+            key="viewport"
+            name="viewport"
+            content="width=device-width, initial-scale=1"
+          />
+          <SeoDefaultHead />
+          <link
+            href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto+Slab:700"
+            rel="stylesheet"
+            key="googlefonts"
+          />
+          <link rel="icon" href="/static/favicon.ico" />
           {this.props.styleTags}
         </Head>
         <body>
