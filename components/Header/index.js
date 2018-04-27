@@ -8,6 +8,7 @@ const HeaderWrapper = styled.header`
 
 const Img = styled.img`
   max-width: 460px;
+  width: 100%;
   height: auto;
 `;
 

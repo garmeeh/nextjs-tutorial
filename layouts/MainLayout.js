@@ -4,7 +4,7 @@ import Header from '../components/Header';
 
 const Main = styled.main`
   background: #fafaff;
-  padding: 25px;
+  padding: 10px;
 `;
 
 const MainLayout = ({ children }) => (
