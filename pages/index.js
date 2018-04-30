@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import Link from 'next/link';
 import MainLayout from '../layouts/MainLayout';
 import { getPeopleAPI } from '../api';
+import { getIdFromString } from '../helpers';
 import Person from '../components/Person';
 import Grid from '../components/Grid';
 
@@ -88,7 +89,17 @@ export default class extends Component {
           )}
         </Nav>
         <Grid>
-          {results.map((person, index) => <Person key={index} {...person} />)}
+          {results.map((person, index) => (
+            <Link
+              key={index}
+              as={`/person/${getIdFromString(person.url)}`}
+              href={`/person?id=${getIdFromString(person.url)}`}
+            >
+              <a>
+                <Person {...person} />
+              </a>
+            </Link>
+          ))}
         </Grid>
       </MainLayout>
     );

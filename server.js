@@ -13,6 +13,12 @@ app
   .then(() => {
     const server = express();
 
+    server.get('/person/:id', (req, res) => {
+      const actualPage = '/person';
+      const queryParams = { id: req.params.id };
+      app.render(req, res, actualPage, queryParams);
+    });
+
     server.get('*', (req, res) => handle(req, res));
 
     server.listen(3000, err => {
