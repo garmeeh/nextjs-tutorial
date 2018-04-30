@@ -3,6 +3,8 @@ import styled from 'styled-components';
 import Link from 'next/link';
 import MainLayout from '../layouts/MainLayout';
 import { getPersonAPI } from '../api';
+import FetchData from '../components/FetchData';
+import HomeWorld from '../components/HomeWorld';
 
 export default class extends Component {
   static defaultProps = {
@@ -34,6 +36,11 @@ export default class extends Component {
           <li>Birth Year: {person.birth_year}</li>
           <li>Gender: {person.gender}</li>
         </ul>
+        <FetchData url={person.homeworld}>
+          {({ data, loading }) => {
+            return <HomeWorld {...data} loading={loading} />;
+          }}
+        </FetchData>
       </MainLayout>
     );
   }
