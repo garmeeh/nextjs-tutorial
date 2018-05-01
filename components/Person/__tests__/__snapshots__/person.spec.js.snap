@@ -1,0 +1,60 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`matches snapshot 1`] = `
+<div
+  class="Person__PersonWrapper-s1764vzb-0 cZQQoU"
+>
+  <div
+    class="Person__Header-s1764vzb-1 dIRTXs"
+  >
+    <p
+      class="Person__Name-s1764vzb-2 kquhVD"
+    >
+      Biggs Darklighter
+    </p>
+  </div>
+  <div
+    class="Person__Details-s1764vzb-3 ctxkcF"
+  >
+    <p
+      class="Person__Detail-s1764vzb-4 hgIVdu"
+    >
+      <strong>
+        D.O.B:
+      </strong>
+       
+      24BBY
+    </p>
+    <p
+      class="Person__Detail-s1764vzb-4 hgIVdu"
+    >
+      <strong>
+        Height:
+      </strong>
+       
+      183
+    </p>
+    <p
+      class="Person__Detail-s1764vzb-4 hgIVdu"
+    >
+      <strong>
+        Mass:
+      </strong>
+       
+    </p>
+  </div>
+  <div
+    class="Person__Films-s1764vzb-5 hdmUDC"
+  >
+    <p
+      class="Person__Detail-s1764vzb-4 hgIVdu"
+      data-testid="films"
+    >
+      Appears in 
+      1
+       film
+      
+    </p>
+  </div>
+</div>
+`;

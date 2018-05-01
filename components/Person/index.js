@@ -52,7 +52,7 @@ const Person = ({ name, birth_year, height, films, mass }) => (
       </Detail>
     </Details>
     <Films>
-      <Detail>
+      <Detail data-testid="films">
         Appears in {films.length} film{films.length > 1 ? 's' : ''}
       </Detail>
     </Films>
